@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+
+    <t t-name="owl_playground.playground" owl="1">
+        <div class="p-3">
+            <center>Owl playground</center>
+        </div>
+        <Navbar>
+            <t t-set-slot="title">main</t>
+            <t t-set-slot="next">sub</t>
+            para
+            
+        </Navbar>        
+            
+        <Counter/>
+        <Card>
+            <t t-set-slot="title">today's schedule</t>
+            this is the schedule text
+        </Card>
+        <center>
+            <Todolist/>
+        </center>
+    </t>
+
+</templates>

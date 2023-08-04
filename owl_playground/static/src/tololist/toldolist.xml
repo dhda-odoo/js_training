@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+
+    <t t-name="owl_playground.Todolist" owl="1">
+        <div class="p-3">
+            
+            
+            <div>
+                <center><input type="text" class="form-control" style="width:13%;" placeholder="ADD TODO" t-on-keyup="addTodo" t-ref="input"></center>
+                <p t-foreach="todolist" t-as="todo" t-key="todo.id">
+                    <Todo id="todo.id" description="todo.description" done="todo.done" toggle.bind="toggle" remove.bind="remove"/>
+                    <!-- <p><t t-esc="todo.id"/>. <t t-esc="todo.description"/></p> -->
+                </p>
+            </div>    
+        </div>
+    </t>
+
+</templates>

@@ -1,0 +1,7 @@
+<templates xml:space="preserve">
+    <t t-name="owl_game.result" owl="1">
+        <div>
+            <label> </label>
+        </div>
+    </t>    
+</templates>

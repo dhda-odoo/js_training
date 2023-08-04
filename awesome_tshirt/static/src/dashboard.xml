@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+
+    <t t-name="awesome_tshirt.clientaction" owl="1">
+        <Layout display="display">
+            <button class="btn btn-primary mx-2" t-on-click="Customers">Customers</button>
+            <button class="btn btn-primary mx-2" t-on-click="open7daysorders">New orders</button>
+            <button class="btn btn-primary mx-2" t-on-click="open7dayscancelled">Cancelled_orders</button>
+        </Layout>
+    </t>
+
+</templates>
